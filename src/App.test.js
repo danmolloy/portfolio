@@ -1,48 +1,51 @@
-import { act, render, screen } from '@testing-library/react';
-import { unmountComponentAtNode } from 'react-dom';
+import { act } from 'react-dom/test-utils';
+import { unmountComponentAtNode, render } from 'react-dom';
+import { Welcome} from "./Components/Welcome";
+import { About } from "./Components/About";
+import { Projects } from "./Components/Projects";
+import { Contact } from "./Components/Contact";
 import App from './App';
 
-let container = null
+let container = null;
 beforeEach(() => {
+  // setup a DOM element as a render target
   container = document.createElement("div");
   document.body.appendChild(container);
 });
 
 afterEach(() => {
+  // cleanup on exiting
   unmountComponentAtNode(container);
   container.remove();
   container = null;
 });
 
-
-it("Welcome component renders", () => {
+it("Welcome renders without error", () => {
   act(() => {
-    render(<App />, container)
+    render(<Welcome />, container)
   })
-  const welcomeText = screen.getByText(/I'm Dan/i);
-  expect(welcomeText).toBeInTheDocument();
+  
+  expect(container.textContent).toMatch(/welcome/gi)
 })
+
 
 it("About component renders", () => {
   act(() => {
-    render(<App />, container)
+    render(<About />, container)
   })
-  const aboutText = screen.getByText(/About/i);
-  expect(aboutText).toBeInTheDocument();
+  expect(container.textContent).toMatch(/about/gi)
 })
 
-it("Portfolio component renders", () => {
+it("Projects component renders", () => {
   act(() => {
-    render(<App />, container)
+    render(<Projects />, container)
   })
-  const portfolioText = screen.getByText(/portfolio/i);
-  expect(portfolioText).toBeInTheDocument();
+  expect(container.textContent).toMatch(/projects/gi)
 })
 
 it("Contact component renders", () => {
   act(() => {
-    render(<App />, container)
+    render(<Contact />, container)
   })
-  cont contactText = screen.getByText(/contact/i);
-  expect(contactText).toBeInTheDocument();
+  expect(container.textContent).toMatch(/contact/gi)
 })
