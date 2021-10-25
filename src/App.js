@@ -6,7 +6,7 @@ import { Welcome } from "./Components/Welcome"
 
 function App() {
   return (
-    <div id="App">
+    <div id="App" className="">
       <Welcome />
       <About /> 
       <Projects />

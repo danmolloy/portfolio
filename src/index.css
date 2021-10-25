@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  a {
+    @apply underline text-blue-500;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Open Sans';
+}
+
+.welcome {
+  height: 90vh;
+  background-image: url("./portrait.jpeg");
+
+}
+
+.contact {
+  height: 20vh;
+}
+
+.blue {
+  color: #14213D;
+}
+
+.blue-bg {
+  background-color: #14213D;
+}
+
+.yellow {
+  color: #FCA311;
+}
+
+.yellow-bg {
+  background-color: #FCA311;
+}
+
+.gray {
+  color: #FCA311;
+}
+
+.gray-bg {
+  background-color: #FCA311;
+}
+
+body {
+  background-color: #14213D;
 }
