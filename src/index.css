@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 @layer base {
   h1 {
@@ -17,13 +17,11 @@
 }
 
 body {
-  font-family: 'Open Sans';
+  font-family: 'Nunito';
 }
 
 .welcome {
-  height: 90vh;
-  background-image: url("./portrait.jpeg");
-
+  height: auto;
 }
 
 .contact {
@@ -55,5 +53,11 @@ body {
 }
 
 body {
-  background-color: #14213D;
+  background-color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .text {
+    text-shadow: 1px 1px 2px #202020;
+  }
 }

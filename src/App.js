@@ -1,6 +1,6 @@
 import './App.css';
 import { About } from './Components/About';
-import { Contact } from './Components/Contact';
+import { Footer } from './Components/Footer';
 import { Projects } from './Components/Projects';
 import { Welcome } from "./Components/Welcome"
 
@@ -10,7 +10,7 @@ function App() {
       <Welcome />
       <About /> 
       <Projects />
-      <Contact />
+      <Footer />
     </div>
   );
 }
