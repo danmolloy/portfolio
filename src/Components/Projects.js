@@ -12,9 +12,9 @@ const projects = [
   },
   {
     title: "Battleships",
-    image: "logo192.png",
+    image: "/img/battleships.png",
     blurb: "Play the classic board game against the computer. Try and beat the highscores!",
-    link: "https://www.google.com",
+    link: "https://mystifying-saha-d28822.netlify.app/",
     code: "https://github.com/danmolloy/battleships",
     stack: ["React", "Redux", "Tailwind", "Typescript", "Jest", "Mirage JS"]
   }
