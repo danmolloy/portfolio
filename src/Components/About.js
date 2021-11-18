@@ -1,3 +1,5 @@
+import Bass from '/img/bass.jpeg'
+
 export const About = () => {
   return (
 
