@@ -1,9 +1,11 @@
 import { ProjectCard } from "./ProjectCard"
+import battleships from '../images/battleships.png'
+import twitter from '../images/twitter.png'
 
 const projects = [
    {
     title: "Twitter Clone",
-    image: "logo192.png",
+    image: `${twitter}`,
     blurb: "A full stack social network, complete with authentication, authorization, notifications and direct messaging. Share your thoughts with your friends and interact with them.",
     link: "https://sharp-hugle-251ecd.netlify.app/",
     code: "https://github.com/danmolloy/twitter-clone",
@@ -12,7 +14,7 @@ const projects = [
   },
   {
     title: "Battleships",
-    image: "/battleships.png",
+    image: `${battleships}`,
     blurb: "Play the classic board game against the computer. Go face-to-face with the computer to see who will win the battle. Try and beat the highscores!",
     link: "https://mystifying-saha-d28822.netlify.app/",
     code: "https://github.com/danmolloy/battleships",
