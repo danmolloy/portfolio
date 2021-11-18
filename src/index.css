@@ -12,8 +12,18 @@
     @apply text-xl;
   }
   a {
-    @apply underline text-blue-500;
+    @apply hover:underline text-blue-500;
   }
+}
+
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.welcome-text {
+  animation-name: fade-in;
+  animation-duration: 4s;
 }
 
 body {
