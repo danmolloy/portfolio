@@ -1,4 +1,4 @@
-import bass from '../images/bass.jpeg'
+import bass from '../images/bass'
 
 export const About = () => {
   return (
