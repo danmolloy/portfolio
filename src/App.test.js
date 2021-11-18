@@ -3,18 +3,17 @@ import { unmountComponentAtNode, render } from 'react-dom';
 import { Welcome} from "./Components/Welcome";
 import { About } from "./Components/About";
 import { Projects } from "./Components/Projects";
-import { Contact } from "./Components/Contact";
+import { Footer } from "./Components/Footer";
+import pretty from "pretty"
 import App from './App';
 
 let container = null;
 beforeEach(() => {
-  // setup a DOM element as a render target
   container = document.createElement("div");
   document.body.appendChild(container);
 });
 
 afterEach(() => {
-  // cleanup on exiting
   unmountComponentAtNode(container);
   container.remove();
   container = null;
@@ -25,7 +24,8 @@ it("Welcome renders without error", () => {
     render(<Welcome />, container)
   })
   
-  expect(container.textContent).toMatch(/welcome/gi)
+  expect(container.textContent).toMatch(/Dan Molloy/gi)
+  expect(pretty(container.innerHTML)).toMatchSnapshot();
 })
 
 
@@ -34,6 +34,7 @@ it("About component renders", () => {
     render(<About />, container)
   })
   expect(container.textContent).toMatch(/about/gi)
+  expect(pretty(container.innerHTML)).toMatchSnapshot();
 })
 
 it("Projects component renders", () => {
@@ -41,11 +42,13 @@ it("Projects component renders", () => {
     render(<Projects />, container)
   })
   expect(container.textContent).toMatch(/projects/gi)
+  expect(pretty(container.innerHTML)).toMatchSnapshot();
 })
 
-it("Contact component renders", () => {
+it("Footer component renders", () => {
   act(() => {
-    render(<Contact />, container)
+    render(<Footer />, container)
   })
   expect(container.textContent).toMatch(/contact/gi)
+  expect(pretty(container.innerHTML)).toMatchSnapshot();
 })

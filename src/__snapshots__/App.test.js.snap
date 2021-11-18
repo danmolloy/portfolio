@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component renders 1`] = `
+"<div id=\\"about\\" class=\\"text-black h-auto flex flex-col text-center justify-center my-24 mx-12\\">
+  <h1 class=\\"p-4 text-4xl\\">About</h1>
+  <div class=\\"flex flex-col itmes-center md:items-start md:flex-row justify-center \\"><img src=\\"bass.jpeg\\" alt=\\"Dan playing double bass\\" class=\\"h-auto w-full max-w-sm\\">
+    <div class=\\"md:w-1/2 text-left md:ml-4\\">
+      <div class=\\"p-2\\">
+        <p>Originally from Australia, I moved to London in 2014.</p>
+        <p>I have spent the past 12 years working as a classical double bassist, performing in some of the world's leading ensembles such as the London Symphony, BBC Symphony and Royal Philharmonic Orchestras.</p>
+        <p>I've performed in every major concert hall in U.K. and I'm on a variety of soundtracks such as <i>The Crown</i>, <i>Downton Abbey</i> and <i>Seven Worlds, One Planet</i>.</p>
+        <p>You can find out more about my music at <a href=\\"https://maslink.co.uk/client-directory?client=MOLLD1&amp;instrument=DOUBL1\\">Musician's Answering Service</a>.</p>
+      </div>
+      <div class=\\"p-2\\">
+        <p>My spare time in 2020-2021 has been dedicated to learning web development. My focus has been on React and related libraries such as Redux, Apollo, Jest and TypeScript to name a few. </p>
+      </div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`Footer component renders 1`] = `"<div id=\\"contact\\" class=\\"bg-gray-100 flex flex-col justify-center items-center contact flex flex-col p-12\\"><a href=\\"mailto:danielmolloy_6@icloud.com\\" class=\\"no-underline hover:underline text-xl\\">Contact Me</a><button class=\\"no-underline hover:underline\\">Back to top</button></div>"`;
+
+exports[`Projects component renders 1`] = `
+"<div id=\\"projects\\" class=\\"flex flex-col items-center mt-24\\">
+  <h1 class=\\"text-4xl\\">Projects</h1>
+  <div class=\\"project-card bg-white flex flex-col border m-8 w-auto items-center shadow\\">
+    <h2 class=\\"text-3xl mt-2\\">Twitter Clone</h2>
+    <div class=\\"flex flex-col md:flex-row items-center md:items-start md:justify-evenly m-4\\"><a href=\\"https://sharp-hugle-251ecd.netlify.app/\\" target=\\"_blank\\" rel=\\"noreferrer\\"><img src=\\"twitter.png\\" alt=\\"Project preview\\" class=\\"w-80 border h-auto md:mr-2\\"></a>
+      <div class=\\"flex flex-col lg:flex-row\\">
+        <div class=\\"flex flex-col md:ml-2\\">
+          <p class=\\"w-72\\">A full stack social network, complete with authentication, authorization, notifications and direct messaging. Share your thoughts with your friends and interact with them.</p>
+          <div class=\\"flex flex-col\\"><a href=\\"https://sharp-hugle-251ecd.netlify.app/\\" target=\\"_blank\\" rel=\\"noreferrer\\">Live Example</a><a href=\\"https://github.com/danmolloy/twitter-clone\\" target=\\"_blank\\" rel=\\"noreferrer\\">Code</a></div>
+        </div>
+        <div class=\\"hidden md:flex flex-col ml-2 text-gray-400\\">
+          <ul>
+            <li>React</li>
+            <li>Apollo Client</li>
+            <li>TypeScript</li>
+            <li>Tailwind</li>
+            <li>Jest</li>
+            <li>React Router</li>
+            <li>Node.js</li>
+            <li>Apollo Server</li>
+            <li>Prisma</li>
+            <li>SQLIte</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=\\"project-card bg-white flex flex-col border m-8 w-auto items-center shadow\\">
+    <h2 class=\\"text-3xl mt-2\\">Battleships</h2>
+    <div class=\\"flex flex-col md:flex-row items-center md:items-start md:justify-evenly m-4\\"><a href=\\"https://mystifying-saha-d28822.netlify.app/\\" target=\\"_blank\\" rel=\\"noreferrer\\"><img src=\\"battleships.png\\" alt=\\"Project preview\\" class=\\"w-80 border h-auto md:mr-2\\"></a>
+      <div class=\\"flex flex-col lg:flex-row\\">
+        <div class=\\"flex flex-col md:ml-2\\">
+          <p class=\\"w-72\\">Play the classic board game against the computer. Go face-to-face with the computer to see who will win the battle. Try and beat the highscores!</p>
+          <div class=\\"flex flex-col\\"><a href=\\"https://mystifying-saha-d28822.netlify.app/\\" target=\\"_blank\\" rel=\\"noreferrer\\">Live Example</a><a href=\\"https://github.com/danmolloy/battleships\\" target=\\"_blank\\" rel=\\"noreferrer\\">Code</a></div>
+        </div>
+        <div class=\\"hidden md:flex flex-col ml-2 text-gray-400\\">
+          <ul>
+            <li>React</li>
+            <li>Redux</li>
+            <li>Tailwind</li>
+            <li>Typescript</li>
+            <li>Jest</li>
+            <li>Mirage JS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`Welcome renders without error 1`] = `
+"<div class=\\"welcome flex flex-col items-center justify-center\\"><img src=\\"portrait.jpeg\\" alt=\\"Dan in a garden\\" class=\\"max-h-screen-sm max-w-screen-sm md:self-end md:mr-20\\">
+  <div class=\\"absolute sm:-mt-96 text-center text-white lg:text-black md:left-20\\">
+    <h1 class=\\"text-5xl md:text-6xl font-semibold z-10 text\\">Dan Molloy</h1>
+    <h2 class=\\"text-3xl md:text-4xl z-10 text\\">Front end developer</h2>
+  </div>
+</div>"
+`;
