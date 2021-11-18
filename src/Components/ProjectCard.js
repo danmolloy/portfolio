@@ -4,7 +4,7 @@ export const ProjectCard = (props) => {
       <h2 className="text-3xl mt-2">{props.project.title}</h2>
       <div className="flex flex-col md:flex-row items-center md:items-start md:justify-evenly m-4">
       <a href={props.project.link}>
-      <img src={props.project.image} className="w-80 border h-auto md:mr-2"/>
+      <img src={props.project.image} alt="Project preview" className="w-80 border h-auto md:mr-2"/>
       </a>
       <div className="flex flex-col lg:flex-row">
       <div className="flex flex-col md:ml-2" >
