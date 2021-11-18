@@ -4,7 +4,7 @@ export const About = () => {
     <div id="about" className="text-black h-auto flex flex-col text-center justify-center my-24 mx-12">
       <h1 className="p-4 text-4xl">About</h1>
       <div className="flex flex-col itmes-center md:items-start md:flex-row justify-center ">
-        <img src="/img/bass.jpeg" className="h-auto w-auto max-w-sm" />
+        <img src="%PUBLIC_URL%/img/bass.jpeg" className="h-auto w-auto max-w-sm" />
         <div className="md:w-1/2 text-left md:ml-4">
           <div className="p-2">
             <p>Originally from Australia, I moved to London in 2014.</p>
