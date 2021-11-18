@@ -12,7 +12,7 @@ const projects = [
   },
   {
     title: "Battleships",
-    image: "%PUBLIC_URL%/img/battleships.png",
+    image: "/battleships.png",
     blurb: "Play the classic board game against the computer. Go face-to-face with the computer to see who will win the battle. Try and beat the highscores!",
     link: "https://mystifying-saha-d28822.netlify.app/",
     code: "https://github.com/danmolloy/battleships",
